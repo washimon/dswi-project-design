@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superloro</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <div class="navbar main mt-1">
+        <div class="logo-links">
+            <a href="./home.html">
+                <img src="" alt="Logo superloro">
+            </a>
+            <a class="selected" href="/manager-home.html">Productos</a>
+            <a class="" href="/assitant-home.html">Pedidos</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="./home.html"><button class="button2 btn-log-out">Cerrar sesión</button></a>
+        </div>
+    </div>
+    <div class="product-form main">
+        <div class="form">
+            <div class="form-content">
+                <h2>Crea un producto</h2>
+                <div class="form-input">
+                    <label for="desc-product">Descripción</label>
+                    <input name="descripcion" id="desc-producto" type="text" placeholder="Una descripción del producto">
+                </div>
+                <div class="form-input">
+                    <label for="precio-product">Precio</label>
+                    <input name="precio" id="precio-product" type="number">
+                </div>
+                <div class="form-input">
+                    <label for="stock-product">Stock</label>
+                    <input name="stock" pattern="^\d+$" id="stock-product" type="text" placeholder="Cantidad de productos disponibles">
+                </div>
+                <div class="form-input input-select">
+                    <label for="categoria-product">Categoría</label>
+                    <select name="categoria" value="" id="categoria-product">
+                        <!-- Borrar inicio -->
+                        <option value="">Seleccione una categoría</option>
+                        <option value="Libros">Libros</option>
+                        <option value="Cajas">Cajas</option>
+                        <option value="Bolsas">Bolsas</option>
+                        <option value="Comprobantes">Comprobantes</option>
+                        <!-- Borrar fin -->
+                    </select>
+                </div>
+                <button class="button1">Registrar</button>
+                <a class="btn-regresar" href="./manager-home.html">Regresar</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

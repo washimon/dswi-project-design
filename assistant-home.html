@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superloro</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <div class="navbar main mt-1">
+        <div class="logo-links">
+            <a href="./home.html">
+                <img src="" alt="Logo superloro">
+            </a>
+            <a class="" href="/manager-home.html">Productos</a>
+            <a class="selected" href="/assistant-home.html">Pedidos</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="./home.html"><button class="button2 btn-log-out">Cerrar sesión</button></a>
+        </div>
+    </div>
+    <div class="categories-and-pager main">
+        <div class="search-box-and-filter">
+            <div class="search-box">
+                <input type="text" placeholder="Id Pedido">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <form class="category-filter">
+                <label for="category-filter-of-client">Categoría</label>
+                <div class="category-input">
+                    <select name="categoria" value="" id="category-filter-of-client">
+                        <!-- Borrar inicio -->
+                        <option value="">Seleccione una categoría</option>
+                        <option value="Libros">Libros</option>
+                        <option value="Cajas">Cajas</option>
+                        <option value="Bolsas">Bolsas</option>
+                        <option value="Comprobantes">Comprobantes</option>
+                        <!-- Borrar fin -->
+                    </select>
+                    <button><i class="fas fa-filter"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="pager">
+            <div class="results">
+                <span>Resultados </span><span>12</span><span> de </span><span>15</span>
+            </div>
+            <div class="pages">
+                <!-- <input type="hidden" 
+                    name="action" value="anterior">,
+                    name="pagactual" value="1">, -->
+                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                <!-- <input type="hidden"
+                    name="action" value="irpagina",
+                    name="value" value="1",
+                    name="pagactual" value="1"> -->
+                <a class="pagina-actual" href="#">1</a>
+                <!-- Borrar inicio -->
+                <!-- <input type="hidden"
+                    name="action" value="irpagina",
+                    name="pagina" value="2",
+                    name="pagactual" value="1"> -->
+                <a href="#">2</a>
+                <!-- <input type="hidden"
+                    name="action" value="irpagina",
+                    name="pagina" value="2",
+                    name="pagactual" value="1"> -->
+                <a href="#">3</a>
+                <!-- Borrar fin -->
+                <!-- <input type="hidden" 
+                    name="action" value="siguiente">,
+                    name="pagactual" value="1"> -->
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="create-product main">
+        <a class="" href="./create-update-product.html"><i class="fas fa-plus"></i>Registrar producto</a>
+    </div>
+    <div class="products-table main">
+        <div class="headers">
+            <h4>Id</h4>
+            <h4>Descripción</h4>
+            <h4>Stock</h4>
+            <h4>Precio</h4>
+            <h4>Categoría</h4>
+            <h4>Acciones</h4>
+        </div>
+        <div class="rows rows-1">
+            <p>1</p>
+            <p>Revista de material fino máximo 45 hojas</p>
+            <p>500</p>
+            <p>9.50</p>
+            <p>Libros</p>
+            <div class="actions">
+                <a href="#"><i class="fas fa-edit"></i>Detalles</a>
+                <span>|</span>
+                <a href="#"><i class="fas fa-edit"></i>Edita</a>
+                <span>|</span>
+                <a href="#"><i class="fas fa-trash-alt"></i>Elimina</a>
+            </div>
+        </div>
+        <!-- Borrar inicio -->
+        <div class="rows rows-2">
+            <p>1</p>
+            <p>Revista de material fino máximo 45 hojas</p>
+            <p>500</p>
+            <p>9.50</p>
+            <p>Libros</p>
+            <div class="actions">
+                <a href="#"><i class="fas fa-edit"></i>Detalles</a>
+                <span>|</span>
+                <a href="#"><i class="fas fa-edit"></i>Edita</a>
+                <span>|</span>
+                <a href="#"><i class="fas fa-trash-alt"></i>Elimina</a>
+            </div>
+        </div>
+        <!-- Borrar fin -->
+    </div>
+    <div class="bottom-pager main">
+        <div class="pager">
+            <div class="results">
+                <span>Resultados </span><span>12</span><span> de </span><span>15</span>
+            </div>
+            <div class="pages">
+                <!-- <input type="hidden" 
+                    name="action" value="anterior">,
+                    name="pagactual" value="1">, -->
+                <a href="#"><i class="fas fa-chevron-left"></i></a>
+                <!-- <input type="hidden"
+                    name="action" value="irpagina",
+                    name="value" value="1",
+                    name="pagactual" value="1"> -->
+                <a class="pagina-actual" href="#">1</a>
+                <!-- Borrar inicio -->
+                <!-- <input type="hidden"
+                    name="action" value="irpagina",
+                    name="pagina" value="2",
+                    name="pagactual" value="1"> -->
+                <a href="#">2</a>
+                <!-- <input type="hidden"
+                    name="action" value="irpagina",
+                    name="pagina" value="2",
+                    name="pagactual" value="1"> -->
+                <a href="#">3</a>
+                <!-- Borrar fin -->
+                <!-- <input type="hidden" 
+                    name="action" value="siguiente">,
+                    name="pagactual" value="1"> -->
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
