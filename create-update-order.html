@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superloro</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+    <div class="navbar main mt-1">
+        <div class="logo-links">
+            <a href="./home.html">
+                <img src="" alt="Logo superloro">
+            </a>
+            <a class="" href="/manager-home.html">Productos</a>
+            <a class="selected" href="/assitant-home.html">Pedidos</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="./home.html"><button class="button2 btn-log-out">Cerrar sesión</button></a>
+        </div>
+    </div>
+    <div class="product-form order-form main">
+        <div class="form">
+            <div class="form-content">
+                <h2>Registra un pedido</h2>
+                <input name="idpedido" type="hidden" value="-1">
+                <!-- Update inicio -->
+                <!-- <input name="idcompra" type="hidden">
+                <div class="form-input">
+                    <label for="compra-order">Compra</label>
+                    <input id="compra-order" type="text" value="1 - Pamela Laque - Libros y demás" readonly>
+                </div> -->
+                <!-- Update fin -->
+                <!-- Registrar inicio -->
+                <div class="form-input">
+                    <label for="datoscompra-order">Compra</label>
+                    <select name="idcompra" id="datoscompra-order" value="">
+                        <option value="">Seleccione una compra</option>
+                        <!-- Borrar inicio -->
+                        <option value="1">1 - Pamela Laque - Libros y demás</option>
+                        <option value="2">1 - Pamela Laque - Libros y demás</option>
+                        <option value="3">1 - Pamela Laque - Libros y demás</option>
+                        <!-- Borrar fin -->
+                    </select>
+                </div>
+                <!-- Registrar fin -->
+                <div class="form-input">
+                    <label for="precio-product">Inicio producción</label>
+                    <input name="fecini" id="fecini-order" type="date">
+                </div>
+                <div class="form-input">
+                    <label for="precio-product">Fin producción</label>
+                    <input name="fecini" id="fecini-order" type="date">
+                </div>
+                <div class="form-input">
+                    <label for="estado-order">Estado</label>
+                    <input name="estado" id="estado-order" type="text" value="Sin iniciar" readonly>
+                </div>
+                <button class="button1">Registrar</button>
+                <a class="btn-regresar" href="./assistant-home.html">Regresar</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

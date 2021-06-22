@@ -30,6 +30,11 @@
         <div class="form">
             <div class="form-content">
                 <h2>Crea un producto</h2>
+                <input name="idproducto" type="hidden" value="-1">
+                <div class="form-input">
+                    <label for="desc-product">Descripción</label>
+                    <input name="descripcion" id="desc-producto" type="text" placeholder="Una descripción del producto">
+                </div>
                 <div class="form-input">
                     <label for="desc-product">Descripción</label>
                     <input name="descripcion" id="desc-producto" type="text" placeholder="Una descripción del producto">
@@ -56,6 +61,12 @@
                 </div>
                 <button class="button1">Registrar</button>
                 <a class="btn-regresar" href="./manager-home.html">Regresar</a>
+            </div>
+            <div class="form-image">
+                <div class="form-input">
+                    <label for="imagen-product">Url de Imagen del Producto</label>
+                    <input name="imagen" type="text" placeholder="Link de la imagen" id="imagen-product">
+                </div>
             </div>
         </div>
     </div>
